@@ -18,7 +18,9 @@ Citibike is New York City's rideshare program sponsored by CitiBank. Riders have
 
 For the time period analyzed, January 2020 to April 2021, ridership clearly suffered a dramatic decline during the COVID-19 lockdown in New York City, dropping about 75% between March 11, 2020 and March 31, 2020. However, ridership mostly rebounded by summer, and then entered it's presumable decline over the winter months. 
 
-In January 2021, there was a noticable increase in ridership which then dips agin in February. This may be due to an unseasonably warm January, with temperatures dipping again the next month. As winter has transitioned into spring 2021, ridership has rebounded. 
+In January 2021, there was a noticable increase in ridership which then dips agin in February. This may be due to an unseasonably warm January, with temperatures dipping again the next month. As winter has transitioned into spring 2021, ridership has rebounded.
+
+![Total](/Images/TotalRiders.png)
 
 ### Ridership by Location
 Four out of the five New York City boroughs have Citibike stations. Manhattan has stations throughout the island, while stations in Brooklyn, Queens, and the Bronx are generally concentrated closer to Manhattan and do not extend fully into those boroughs. 
@@ -29,6 +31,8 @@ Outside Manhattan, the most popular stations are consentrated by the Brooklyn an
 
 Overall, Manhattan is the clear location for most riders, even though it has a lower population than the other boroughs. This trend holds for both customers and subscribers. The reasoning behind the concentration behind these two groups may be different, however. For subscribers, most likely to be local users, a high concentration in Manhattan may be beccause Citibike is used more as a commuting tool than for leisure, as many people work in Manhattan and live in outer boroughs or suburbs. For customers, the logic may be that Manhattan is the largest borough for tourism (Times Square, Madison Square Garden, etc) and so Citibike may be a draw for tourists. More data is needed to determine the breakdown in ridership purpose between these groups. 
 
+![Stations](/Images/StationMap.png)
+
 ### Ridership by Sex
 When breaking down ridership by sex, the data clearly show that the majority of subscribers are men, and the majority of customers decline to report their sex. Until early February 2021, men made up the greatest number of riders. 
 
@@ -36,10 +40,14 @@ After February 2021, those who decline to report their sex made up a majority of
 
 Average ride duration also varies by sex, with females' average ride being about 4 minutes longer than mens'. This may be an anomoly, or it may indicate that, while man made up the majority of ridership, they are taking shorter trips. Those who declined to report their sex had a greater average ride time than either males or females. Notably, their average time clocked in at over 30 minutes, the threshold for paying an additional fee above the baseline price. Again, it is not clear why this is taking place. A longer time horizon may reveal if this is a long-term trend or if it is simply related to an unusual number of people not reporting their sex. 
 
+![Sex](/Images/SexDashboard.png)
+
 ### Ridership by Age
 When breaking down ridership by age, those age 25-34 made up the greatest number of riders until February 2021, when rides among those 55-54 took off, while other age groups' ridership plummeted. Once again, the reason for this in unclear. One possible explanation is that older age groups were the first to be vaccinated against COVID-19, making them more willing to venture outside. However, one would expect to see other age groups rising as vaccination eligibility expanded, which has not happened at this point. Another explanation is that age is self-reported (see below on how this may affect the data). If there are Citibike perks for those over 45, such as discounts. In this case, younger groups may be self-reporting as older to take advantage of those perks. 
 
 In terms of ride duration, younger age groups stand out as riding longer, which would make sense as they are generally in better physical shape. Ride duration generally levels off in the middle age groups and then declines again in late age. One anomoly in the data is at age 51, which aligns more with those in younger age groups (see below for likely explanation here)
+
+![Age](/Images/AgeDashboard.png)
 
 ### Data Constraints
 There are several constraints both inherant to the dataset and also to how I set up my analysis.
