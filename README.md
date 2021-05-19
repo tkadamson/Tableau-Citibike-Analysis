@@ -1,10 +1,13 @@
-# hw15-tableau-citibike-analysis
+# Tableau-Citibike-Analysis
 
+### Summary | GRADE: A+
+
+For this project, I was given an open-ended assignment to visualize NYC Citibike Trends in Tableau. The data is publically available in the form of csv's for each month. I chose to analyze ridership by age and by sex, from January 2020 to present.
+
+### Project Writeup
 Visualizations for this project can be viewed in Tableau Public here: https://public.tableau.com/views/CitibikeAnalysis_16207656330520/FullCitibikeAnalysis?:language=en&:useGuest=true&:display_count=y&:origin=viz_share_link
 
 The landing page is the storyboard presentation for all data. Also included are two dashboards: one on ridership based on sex (Metrics on Sex), and one on ridership based on age (Metrics on Age). Lastly, there is a sheet containing a map of all ridership over the defined time period (Station Map by total Ridership).
-
-## Citibike Analysis
 
 The analysis is divded into five sections:
 * Overview
@@ -13,7 +16,7 @@ The analysis is divded into five sections:
 * Ridership by Age
 * Data Constraints
 
-### Overview
+#### Overview
 Citibike is New York City's rideshare program sponsored by CitiBank. Riders have the option to either pay a monthly membership for unlimited rides or pay for each ride individually. For point of service purchases, there is a flat rate for the first 30 minutes and then a small per minute increate after the first thirty. Riders can end at any station they wish rather than returning the bike to its original location.
 
 For the time period analyzed, January 2020 to April 2021, ridership clearly suffered a dramatic decline during the COVID-19 lockdown in New York City, dropping about 75% between March 11, 2020 and March 31, 2020. However, ridership mostly rebounded by summer, and then entered it's presumable decline over the winter months. 
@@ -22,7 +25,7 @@ In January 2021, there was a noticable increase in ridership which then dips agi
 
 ![Total](/Images/TotalRiders.png)
 
-### Ridership by Location
+#### Ridership by Location
 Four out of the five New York City boroughs have Citibike stations. Manhattan has stations throughout the island, while stations in Brooklyn, Queens, and the Bronx are generally concentrated closer to Manhattan and do not extend fully into those boroughs. 
 
 South and midtown Manhattan have the highest ridership levels, with some stations exceeding 50,000 rides over the entire time period analyzed. While not all the stations in those areas are heavily used, the concentration of heavily used stations is greatest there. 
@@ -33,7 +36,7 @@ Overall, Manhattan is the clear location for most riders, even though it has a l
 
 ![Stations](/Images/StationMap.png)
 
-### Ridership by Sex
+#### Ridership by Sex
 When breaking down ridership by sex, the data clearly show that the majority of subscribers are men, and the majority of customers decline to report their sex. Until early February 2021, men made up the greatest number of riders. 
 
 After February 2021, those who decline to report their sex made up a majority of riders. This indicates a strong uptick in rides among customers rather than subscribers. This is also highly coorelaterd with age (see below) as those 45-54 are less likely to report their sex. The reason for this age group not reporting their sex is unclear, though it may be that people are less likely to report their sex when they are purchasing a rid at a station as opposed to when they are signing up for a long-term membership online.
@@ -42,14 +45,14 @@ Average ride duration also varies by sex, with females' average ride being about
 
 ![Sex](/Images/SexDashboard.png)
 
-### Ridership by Age
+#### Ridership by Age
 When breaking down ridership by age, those age 25-34 made up the greatest number of riders until February 2021, when rides among those 55-54 took off, while other age groups' ridership plummeted. Once again, the reason for this in unclear. One possible explanation is that older age groups were the first to be vaccinated against COVID-19, making them more willing to venture outside. However, one would expect to see other age groups rising as vaccination eligibility expanded, which has not happened at this point. Another explanation is that age is self-reported (see below on how this may affect the data). If there are Citibike perks for those over 45, such as discounts. In this case, younger groups may be self-reporting as older to take advantage of those perks. 
 
 In terms of ride duration, younger age groups stand out as riding longer, which would make sense as they are generally in better physical shape. Ride duration generally levels off in the middle age groups and then declines again in late age. One anomoly in the data is at age 51, which aligns more with those in younger age groups (see below for likely explanation here)
 
 ![Age](/Images/AgeDashboard.png)
 
-### Data Constraints
+#### Data Constraints
 There are several constraints both inherant to the dataset and also to how I set up my analysis.
 
 The first thing to note is that this data is a sample. Because Tableau Public can ony handle so many rows of data, I needed to cut down on the very large dataset before building any visualizations. To achieve a smaller sample, I first searched for a random sampling feature in Tableau, but it does not seem to be able to generate a random sample on the Data Source page. Instead, I cut off bikeids at the highest end, until I achived a sample size Tableau could handle. By cutting off bikeids in this way, my sample is not exactly random. However, there seems to be enough churn among the bikes' location I believe that my results and analysis are still statistally sound. That said, it may have distorted a full picture of the data. 
